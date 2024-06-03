@@ -15,6 +15,11 @@
                                             <input type="text" class="form-control form--control checkUser" name="username" value="{{ old('username') }}" required>
                                             <small class="text--danger usernameExist"></small>
                                         </div>
+                                        <div class="form-group">
+                                            <label class="form-label">@lang('Email')</label>
+                                            <input type="text" class="form-control form--control checkUser" name="email" value="{{ old('email') }}" required>
+                                            <small class="text--danger usernameExist"></small>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-6">

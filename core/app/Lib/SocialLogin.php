@@ -31,11 +31,20 @@ class SocialLogin {
         $configuration = gs('socialite_credentials')->$provider;
         $provider      = $this->fromApi && $provider == 'linkedin' ? 'linkedin-openid' : $provider;
 
-        Config::set('services.' . $provider, [
-            'client_id'     => $configuration->client_id,
-            'client_secret' => $configuration->client_secret,
-            'redirect'      => route('user.social.login.callback', $provider),
-        ]);
+        if($this->provider == 'telegram'){
+            Config::set('services.' . $provider, [
+                'bot'     => $configuration->bot,
+                'client_id'     => $configuration->client_id,
+                'client_secret' => $configuration->client_secret,
+                'redirect'      => route('user.social.login.callback', $provider),
+            ]);
+        } else {
+            Config::set('services.' . $provider, [
+                'client_id'     => $configuration->client_id,
+                'client_secret' => $configuration->client_secret,
+                'redirect'      => route('user.social.login.callback', $provider),
+            ]);
+        }
     }
 
     public function login() {
@@ -112,7 +121,7 @@ class SocialLogin {
         $newUser              = new User();
         $newUser->provider_id = $user->id;
 
-        $newUser->email = $user->email;
+        $newUser->email = $user->email ? null : 'user@telegram.com';
 
         $newUser->password  = Hash::make($password);
         $newUser->firstname = $firstName;
@@ -121,7 +130,11 @@ class SocialLogin {
 
         $newUser->status   = Status::VERIFIED;
         $newUser->kv       = $general->kv ? Status::NO : Status::YES;
-        $newUser->ev       = Status::VERIFIED;
+        if($provider == 'telegram'){
+            $newUser->ev       = Status::UNVERIFIED;
+        } else {
+            $newUser->ev       = Status::VERIFIED;
+        }
         $newUser->sv       = gs('sv') ? Status::UNVERIFIED : Status::VERIFIED;
         $newUser->ts       = Status::DISABLE;
         $newUser->tv       = Status::VERIFIED;

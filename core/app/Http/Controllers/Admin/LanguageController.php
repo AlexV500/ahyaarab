@@ -137,7 +137,7 @@ class LanguageController extends Controller {
                 ARRAY_FILTER_USE_KEY
             );
         }
-
+    //    dd($perPage);
         $items = array_slice($json, $offset, $perPage, true);
 
         $json = new LengthAwarePaginator(

@@ -172,10 +172,12 @@ class UserController extends Controller {
             'country'      => 'required|in:' . $countries,
             'mobile_code'  => 'required|in:' . $mobileCodes,
             'username'     => 'required|unique:users|min:6',
+            'email'     => 'required|email',
             'mobile'       => ['required', 'regex:/^([0-9]*)$/', Rule::unique('users')->where('dial_code', $request->mobile_code)],
         ]);
 
         $user->country_code = $request->country_code;
+        $user->email       = $request->email;
         $user->mobile       = $request->mobile;
         $user->username     = $request->username;
 
