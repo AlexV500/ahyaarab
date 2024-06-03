@@ -121,7 +121,12 @@ class SocialLogin {
         $newUser              = new User();
         $newUser->provider_id = $user->id;
 
-        $newUser->email = $user->email ? null : 'user@telegram.com';
+        if($provider == 'telegram'){
+            $newUser->email = $user->email ? null : 'user@mail.com';
+        }
+        else {
+            $newUser->email = $user->email;
+        }
 
         $newUser->password  = Hash::make($password);
         $newUser->firstname = $firstName;
@@ -130,7 +135,8 @@ class SocialLogin {
 
         $newUser->status   = Status::VERIFIED;
         $newUser->kv       = $general->kv ? Status::NO : Status::YES;
-        if($provider == 'telegram'){
+
+        if(($provider == 'telegram') or ($provider == 'google')){
             $newUser->ev       = Status::UNVERIFIED;
         } else {
             $newUser->ev       = Status::VERIFIED;
