@@ -62,8 +62,6 @@ class CartManager
             //   'quantity' => DB::raw("quantity + $quantity"),
         ]);
 
-
-
         $this->forgetCache();
 
         return $cart;
@@ -146,10 +144,10 @@ class CartManager
         return $this->cartItems()->sum(fn(CartItem $item) => $item->quantity);
     }
 
-    public function amount(): Price
+    public function amount($showCurrency = true): Price
     {
         return Price::make(
-            $this->cartItems()->sum(fn(CartItem $item) => $item->amount->raw())
+            $this->cartItems()->sum(fn(CartItem $item) => $item->amount->raw()), $showCurrency
         );
     }
 }

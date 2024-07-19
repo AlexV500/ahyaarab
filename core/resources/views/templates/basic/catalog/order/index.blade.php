@@ -10,6 +10,7 @@
                         <form action="{{ route('user.deposit.insert') }}" method="post" class="deposit-form">
                             @csrf
                             <input type="hidden" name="currency">
+                            <input type="hidden" name="amount" value="{{ cart()->amount(false) }}">
                             <div class="gateway-card">
                                 <div class="row justify-content-center gy-sm-4 gy-3">
                                     <div class="col-lg-6">

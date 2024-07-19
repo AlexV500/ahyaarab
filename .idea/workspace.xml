@@ -4,82 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc9b981-2081-4055-8e89-aeaa6cd5d5e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Admin/Catalog/Order/NewOrder/IndexController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Admin/Catalog/Product/PositionDownController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Admin/Catalog/Product/PositionUpController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Admin/Catalog/Property/PositionDownController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Admin/Catalog/Property/PositionUpController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Catalog/IndexController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Catalog/Product/ShowController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/Http/Requests/Admin/Catalog/Product/StoreRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/Http/Requests/Admin/Catalog/Product/UpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/Http/Requests/Admin/Catalog/Property/UpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/Providers/AliasServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/Traits/ViewVariables.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/View/Components/ConfirmationModalGet.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/resources/views/admin/catalog/category/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/resources/views/admin/catalog/product/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/resources/views/admin/catalog/product/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/resources/views/admin/catalog/product/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/resources/views/admin/catalog/property/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/resources/views/admin/catalog/property/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/resources/views/components/confirmation-modal-get.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/resources/views/templates/basic/catalog/category/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/resources/views/templates/basic/catalog/product/shared/product-list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/Domain/Catalog/Events/CreatedCategoryEvent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/Domain/Catalog/Events/CreatedProductEvent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/Domain/Catalog/Events/CreatedPropertyEvent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/Domain/Catalog/Listeners/CreateCategoryItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/Domain/Catalog/Listeners/CreateProductItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/Domain/Catalog/Listeners/CreatePropertyItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/Domain/Order/ViewModels/Admin/OrderViewModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/Support/Services/ImageUploadService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/Support/Services/ProductService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/Support/Traits/Models/SetPosition.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ahyaarab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ahyaarab.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arabcasino_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/arabcasino_1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/basic/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/basic/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/basic/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/basic/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/17_06_2024_core.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/25_06_2024_core.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app/Constants/FileInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/Constants/FileInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app/Http/Controllers/Admin/AutomaticGatewayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Admin/AutomaticGatewayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app/Http/Controllers/Catalog/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Catalog/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app/Http/Controllers/Catalog/CatalogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Catalog/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app/Http/Controllers/Catalog/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/Http/Controllers/Catalog/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app/Http/Controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/Http/Controllers/SiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app/Http/Requests/OrderFormRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/Http/Requests/OrderFormRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app/Providers/DomainServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/Providers/DomainServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app/View/ViewModels/CatalogViewModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/bootstrap/providers.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/bootstrap/providers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/core/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/config/telescope.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/config/telescope.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/public/vendor/telescope/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/public/vendor/telescope/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/public/vendor/telescope/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/public/vendor/telescope/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/resources/views/admin/partials/sidenav.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/resources/views/admin/partials/sidenav.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/resources/views/templates/basic/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/resources/views/templates/basic/partials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Domain/Cart/CartManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Domain/Cart/CartManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Domain/Catalog/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Domain/Catalog/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Domain/Catalog/Observers/CategoryObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Domain/Catalog/Observers/CategoryObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Domain/Catalog/Providers/EventsServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Domain/Catalog/Providers/EventsServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Domain/Catalog/ViewModels/CategoryViewModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Domain/Catalog/ViewModels/CategoryViewModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Domain/Order/Actions/NewOrderAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Domain/Order/Actions/NewOrderAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Domain/Order/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Domain/Order/Models/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Domain/Product/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Domain/Product/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Domain/Product/Models/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Domain/Product/Models/Property.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Support/Casts/PriceCast.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Support/Casts/PriceCast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Support/Logging/TelegramLoggerFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Support/Logging/TelegramLoggerHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Support/ValueObjects/Price.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Support/ValueObjects/Price.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Support/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Support/helpers.php" afterDir="false" />
-    </list>
+    <list default="true" id="acc9b981-2081-4055-8e89-aeaa6cd5d5e9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -294,27 +219,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/OSPanel/home/ahyaarab/core/resources/views/templates/basic/catalog/category&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/OSPanel/home/ahyaarab/core/resources/views/admin/catalog/order",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OSPanel\home\ahyaarab\core\resources\views\admin\catalog\order" />
       <recent name="E:\OSPanel\home\ahyaarab\core\resources\views\templates\basic\catalog\category" />
       <recent name="E:\OSPanel\home\ahyaarab\core\resources\views\templates\basic\catalog" />
       <recent name="E:\OSPanel\home\ahyaarab\core\resources\views\admin\catalog\product" />
       <recent name="E:\OSPanel\home\ahyaarab\core\resources\views\admin\catalog\property" />
-      <recent name="E:\OSPanel\home\ahyaarab\core\resources\views\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\OSPanel\home\ahyaarab\core\resources\views\templates\basic\catalog\category" />

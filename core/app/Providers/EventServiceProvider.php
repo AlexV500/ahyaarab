@@ -3,7 +3,9 @@
 namespace App\Providers;
 
 use App\Events\AfterSessionRegenerated;
-use App\Listeners\SendEmailNewUserListener;
+
+use App\Events\OrderPlaced;
+use App\Listeners\OrderCreation;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
@@ -17,9 +19,11 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $listen = [
         Registered::class => [
-            //SendEmailVerificationNotification::class,
+            SendEmailVerificationNotification::class,
         //    SendEmailNewUserListener::class
         ],
+
+        OrderPlaced::class => [OrderCreation::class],
     ];
 
     /**

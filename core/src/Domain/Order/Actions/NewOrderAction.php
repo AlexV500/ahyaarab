@@ -25,7 +25,8 @@ class NewOrderAction
         return Order::query()->create([
         //    'user_id' => auth()->id(),
             'user_id' => 1,
-            'payment_method_id' => 'Online',
+            'payment_method_id' => 2,
+            'amount' => cart()->amount(),
         ]);
     }
 }

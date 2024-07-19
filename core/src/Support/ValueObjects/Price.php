@@ -16,6 +16,7 @@ class Price implements Stringable
 
     public function __construct(
         private readonly int    $value = 0,
+        private readonly bool   $showCurrency = true,
         private readonly string $currency = 'USD',
         private readonly int    $precision = 100,
 
@@ -47,13 +48,16 @@ class Price implements Stringable
 
     public function symbol(): string
     {
+        if(!$this->showCurrency){
+            return '';
+        }
         return $this->currencies[$this->currency];
     }
 
     public function __toString(): string
     {
         return sprintf("%s %s",
-            number_format($this->value(), 2, ',', ' '),
+            number_format($this->value(), 2, '.', ' '),
             $this->symbol());
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Catalog\Order\NewOrder;
+namespace App\Http\Controllers\Admin\Catalog\Order\CancelledOrder;
 
 use App\Http\Controllers\Admin\Catalog\BaseController;
 use Domain\Order\ViewModels\Admin\OrderViewModel;
@@ -10,10 +10,9 @@ class IndexController extends BaseController
     public function __invoke(){
 
         $addViewVariables = [
-            'pageTitle' => 'New Orders',
+            'pageTitle' => 'Cancelled Orders',
         ];
 
         return (new OrderViewModel())->view('admin.catalog.order.index', $this->mergeViewVariables($addViewVariables));
     }
-
 }

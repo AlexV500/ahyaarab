@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Gateway;
 
 use App\Constants\Status;
+use App\Events\OrderPlaced;
 use App\Http\Controllers\Controller;
 use App\Lib\FormProcessor;
 use App\Models\AdminNotification;
@@ -10,6 +11,7 @@ use App\Models\Deposit;
 use App\Models\GatewayCurrency;
 use App\Models\Transaction;
 use App\Models\User;
+use Domain\Order\Actions\NewOrderAction;
 use Illuminate\Http\Request;
 
 class PaymentController extends Controller {
@@ -22,11 +24,19 @@ class PaymentController extends Controller {
     }
 
     public function depositInsert(Request $request) {
+
+    //    dd($request);
+
         $request->validate([
             'amount'   => 'required|numeric|gt:0',
             'gateway'  => 'required',
             'currency' => 'required',
         ]);
+
+
+
+        $orderAction = app()->make(NewOrderAction::class);
+        event(new OrderPlaced($request, $orderAction));
 
         $user = auth()->user();
         $gate = GatewayCurrency::whereHas('method', function ($gate) {
